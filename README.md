@@ -38,7 +38,7 @@ Predict variable (desired target)
 DV
 
 
-**Approach**
+# **Approach**
 Following steps were followed to build the model:
 
 Dataset was cleaned off the null values.
@@ -51,5 +51,5 @@ Random Forest Classifier
 K Nearest Neighbours
 Naive Bayes Classifier.
 
-**Result**
+# **Result**
 The task was to determine if a given patient is under the risk of CHD in the coming 10 years. To do this, following features were at our disposal: 'id','age','education','sex','cigsPerDay','BPMeds','prevalentStroke','prevalentHyp','diabe tes','totChol','sysBP','BMI','glucose'. 'is_smoking','heartRate','diaBP','TenYearCHD'. Logistic Regression, Random Forest Classifier, K Nearest Neighbours, Naive Bayes Classifier were used Of which, the Random Forest classifier yielded best results. Using Shapley analysis it was found that education, age, cigsPerDay, sysBP, and totChol were top 5 most influential factors in determination of whether the patient is facing the risk of CHD or not.
