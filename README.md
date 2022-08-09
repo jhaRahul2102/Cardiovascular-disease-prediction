@@ -36,3 +36,20 @@ Predict variable (desired target)
 * **10-year risk of coronary heart disease CHD** 
 (binary: “1”, means “Yes”, “0” means “No”) -
 DV
+
+
+**Approach**
+Following steps were followed to build the model:
+
+Dataset was cleaned off the null values.
+Outliers were replaced with upper limit and lower limit values as applicable. 3. Imbalances in the classes were fixed using SMOTE.
+Categorical features were encoded
+Feature selection was done by inspecting correlation between features and aforementioned features were finalised.
+The data was split to train and test and scaled using MinMaxScaler. 7. Following 4 models were implemented on the training set:
+Logistic Regression
+Random Forest Classifier
+K Nearest Neighbours
+Naive Bayes Classifier.
+
+**Result**
+The task was to determine if a given patient is under the risk of CHD in the coming 10 years. To do this, following features were at our disposal: 'id','age','education','sex','cigsPerDay','BPMeds','prevalentStroke','prevalentHyp','diabe tes','totChol','sysBP','BMI','glucose'. 'is_smoking','heartRate','diaBP','TenYearCHD'. Logistic Regression, Random Forest Classifier, K Nearest Neighbours, Naive Bayes Classifier were used Of which, the Random Forest classifier yielded best results. Using Shapley analysis it was found that education, age, cigsPerDay, sysBP, and totChol were top 5 most influential factors in determination of whether the patient is facing the risk of CHD or not.
